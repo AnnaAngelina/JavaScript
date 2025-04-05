@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Olá, insira seu nome:</h1>
+    <input id="nome" type="text">
+    <button type="submit">enviar
+    </button>
+
+    <script>
+        var botao = document.querySelector('button')
+        let nome = document.getElementById('nome');
+        botao.addEventListener('click', function() {
+        let valor = nome.value;
+        console.log(valor);
+        });
+    </script>
+</body>
+</html>
