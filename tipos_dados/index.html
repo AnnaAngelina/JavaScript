@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tipos de dados</h1>
+
+    <script>
+        console.log(numero)
+        var indefinido;
+        console.log(indefinido)
+        console.log(typeof(indefinido))
+        var vazio = null
+        console.log(vazio)
+        console.log(typeof(vazio))
+
+        var numero = 1;
+        console.log(numero)
+        console.log(typeof(11.5));
+        console.log(typeof(NaN));
+        console.log(typeof(numero));
+
+        var nome = 'Anna Angelina';
+        var sobrenome = 'Brito';
+        var nomeCompleto = nome+' '+sobrenome;
+        console.log(nome);
+        console.log(nomeCompleto);
+        console.log(typeof(nome));
+
+        var verdadeiro = true;
+        console.log(verdadeiro);
+        console.log(typeof(verdadeiro));
+
+        var pessoa = {
+            nome: 'Anna',
+            idade: 16
+        };
+        pessoa.idade = 17;
+        pessoa.profissao = 'estudante';
+        console.log(pessoa);
+        console.log(pessoa.nome);
+        console.log(pessoa.profissao);
+        console.log(typeof(pessoa));
+
+        var lista = ['feijão', 'arroz', {quantidade: 2}];
+        console.log(lista[1])
+        console.log(lista[2].quantidade)
+        console.log(typeof(lista));
+    </script>
+</body>
+</html>
