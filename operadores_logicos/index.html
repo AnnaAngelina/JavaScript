@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operadores Lógicos</h1>
+    <script>
+        var alunos = [{nome: 'Anna', idade: 17}, {nome: 'Letícia', idade: 19}];
+        if (alunos[0].idade >= 18 && alunos[1].idade >= 18) {
+            console.log(alunos[0].nome +' E '+alunos[1].nome+' já podem tirar a carteira de motorista')
+        } else if (alunos[0].idade >= 18 || alunos[1].idade >= 18) {
+            console.log(alunos[0].nome +' OU '+alunos[1].nome+' já podem tirar a carteira de motorista')
+        } else {
+            console.log(alunos[0].nome +' e '+alunos[1].nome+' não podem tirar a carteira de motorista')
+        };
+
+        if (!(alunos[0].idade >= 18)) {
+            console.log(alunos[0].nome+' não pode fazer a carteira de motorista')
+        };
+    </script>
+</body>
+</html>

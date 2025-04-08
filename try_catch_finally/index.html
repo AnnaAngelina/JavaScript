@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Testando try catch finally e throw</h1>
+    <script>
+        var lista = ['mamão', 'banana', 'morango'];
+        var numero = 0;
+        try {
+            while (numero < 4) {
+                if (numero===3){
+                    throw 'indice fora de lista'
+                } else {
+                    console.log((numero)+'- '+lista[numero]);
+                    numero++;
+                }
+            }
+        } catch (erro) {
+            console.log('Parece que a lista não possui um item 4 para ser acessado no while!')
+            console.log('[ERROR]'+erro)
+        } finally {
+            lista[numero] = 'pessego' 
+            console.log('Problema resolvido')
+            numero = 0
+            while (numero < 4) {
+                console.log((numero)+'- '+lista[numero])
+                numero++;
+            }
+        }
+    </script>
+</body>
+</html>
