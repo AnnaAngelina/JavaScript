@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mouse {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        #quadro {
+            width: 300px;
+            height: 300px;
+            align-self: center;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="mouse"></div>
+    <div id="quadro"></div>
+    <script>
+        var mouse = document.getElementById('mouse');
+        var quadro = document.getElementById('quadro');
+
+        
+        document.addEventListener('mousemove', (e) => {
+            mouse.style.left = (e.clientX -10) + 'px';
+            mouse.style.top = (e.clientY -10) + 'px';
+        });
+        quadro.addEventListener('mouseenter', () => {
+            mouse.style.backgroundColor = 'crimson';
+        })
+        quadro.addEventListener('mouseleave', () => {
+            mouse.style.backgroundColor = 'palevioletred';
+        })
+
+
+    </script>
+</body>
+</html>
