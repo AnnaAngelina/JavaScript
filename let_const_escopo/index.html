@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Declaração de variável com let de const + escopo</h1>
+    <p>com let e const podemos criar escopos até com o if oq com o var não podemos, somente em funções (que é onde cria escopos)</p>
+    <script>
+        let x = 5;
+        x = 20
+        for (let x = 0; x<10; x++) {
+            console.log(x);
+        }
+        console.log(x);
+
+        const y = 10;
+        // y = y+1 
+        console.log(y);
+        console.log(y.toString());
+    </script>
+</body>
+</html>
