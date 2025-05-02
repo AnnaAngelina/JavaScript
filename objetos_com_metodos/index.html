@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando objetos com métodos e o this</title>
+</head>
+<body>
+    <script>
+        var number = 5;
+        this.alert('olá');
+        console.log(this);
+        var pessoa = {
+            nome: 'Anna',
+            idade: 17,
+            aniversario: function() {
+                this.idade++
+            },
+            falar: function() {
+                console.log('Olá')
+            }
+        };
+
+        console.log(pessoa.nome);
+        console.log(pessoa.idade);
+        pessoa.aniversario();
+        console.log(pessoa.idade);
+        pessoa.falar();
+
+        var operacoes = {
+            soma: function(a, b) {
+                return a+b
+            }
+        };
+
+        console.log('O resultado da soma é ' + operacoes.soma(9, 10).toString());
+    </script>
+</body>
+</html>
