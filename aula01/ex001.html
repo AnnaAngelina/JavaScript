@@ -16,8 +16,23 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aut, at, velit quod distinctio repellat aperiam omnis quidem veritatis perspiciatis porro libero quibusdam et autem quo saepe dolore amet suscipit.</p>
     <script>
         window.alert('Meu primeiro script!')
-        window.confirm('Legal, né?')
-        window.prompt('Você também gostou?')
+        var resp = prompt('Você também gostou?', 'sim/nao')
+        var mensage
+        var conf = window.confirm('Você também está aprendendo JS?')
+        if (conf) {
+            mensage = 'Eba! Que legal! Vamos aprender juntos'
+        } else {
+            mensage = 'Que pena :('
+        }
+        
+        if (resp === 'sim') {
+            document.write(`<p>Fico feliz por ter gostado!</p>`)
+        } else {
+            document.write(`<pAh :(</p>`)
+        }
+
+        document.write(`<p>${mensage}</p>`)
+        
     </script>
 </body>
 </html>
